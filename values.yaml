@@ -1,0 +1,14 @@
+fernetKey: V0NWUTduSkM4Q3J1MnVTY1NOMGZqdk5ZMHd1M0ZYN1A=
+webserverSecretKey: V0NWUTduSkM4Q3J1MnVTY1NOMGZqdk5ZMHd1M0ZYN1A=
+executor: "KubernetesExecutor"
+
+dags:
+  gitSync:
+    enabled: true
+    repo: https://github.com/TkMa777/k8s-Airflow
+    branch: master
+    rev: HEAD
+    depth: 1
+    maxFailures: 0
+    subPath: "dags"
+
